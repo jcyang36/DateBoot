@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- This is the comment section. It is a
+multiline comment section about my first HTML application.
+This allows me to enter a lot of text here.
+But just because I can...it doesn't mean I should.-->
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
+    <meta name ="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Intro</title>
+</head>
+<body>
+<div class="container">
+    <div class="well"><a class="btn btn-default" target= "_blank" href="http://www.montgomerycollege.edu">MC page</a>
+
+    <a class="btn btn-success" href="http://www.google.com" >Google </a>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+
+        </div>
+        <div class="col-md-6">
+            <p> Today is: Monday</p>
+            <p  th:text="${myvar}"></p>
+
+        </div>
+    </div>
+    <div class="row">
+            <div class="col-md-6">
+                <h1>Name</h1>
+                <span>Joyce</span>
+                <h2>Computer #</h2>
+                <span> 7</span>
+                <h3>Where you live</h3>
+                <span>Rockville</span>
+                <h4> Favorite movie</h4>
+                <span>The Matrix</span>
+                <h5>Favorite quote</h5>
+                <span>The best revenge is massive success</span>
+                <h6>Anything else</h6>
+            </div>
+            <div class="col-md-6">
+
+
+            </div>
+
+    </div>
+    <div class="row">
+    <div class="well col-md-6">
+
+   <img  src="data:image/jpeg;base64,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"/>
+    </div>
+    <div class="col-md-6">
+
+    </div>
+    </div>
+    <br/>
+<div class="row">
+    <div class="col-md-3">
+        <ul>
+            <li>This is an unordered list item</li>
+            <li>This is another unordered list item</li>
+            <li>This is yet another unordered list item</li>
+            <li>This is an unordered list item again</li>
+        </ul>
+
+        <ol>
+            <li>This is an unordered list item</li>
+            <li>This is another unordered list item</li>
+            <li>This is yet another unordered list item</li>
+            <li>This is an unordered list item again</li>
+        </ol>
+    </div>
+</div>
+</div>
+</body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</html>
