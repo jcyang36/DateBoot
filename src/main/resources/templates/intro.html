@@ -21,11 +21,9 @@ But just because I can...it doesn't mean I should.-->
     <a class="btn btn-success" href="http://www.google.com" >Google </a>
     </div>
     <div class="row">
-        <div class="col-md-6">
 
-        </div>
-        <div class="col-md-6">
-            <p> Today is: Monday</p>
+        <div class="pull-right">
+            <p th:text="${mydate}"></p>
             <p  th:text="${myvar}"></p>
 
         </div>
@@ -36,12 +34,12 @@ But just because I can...it doesn't mean I should.-->
                 <span>Joyce</span>
                 <h2>Computer #</h2>
                 <span> 7</span>
-                <h3>Where you live</h3>
-                <span>Rockville</span>
-                <h4> Favorite movie</h4>
+                <h3> Favorite movie</h3>
                 <span>The Matrix</span>
-                <h5>Favorite quote</h5>
+                <h4>Favorite quote</h4>
                 <span>The best revenge is massive success</span>
+                <h5>Favorite food</h5>
+                <span>Dim Sum</span>
                 <h6>Anything else</h6>
             </div>
             <div class="col-md-6">
